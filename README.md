@@ -584,17 +584,6 @@ Raised when request validation fails (400).
 
 Raised when server error occurs (500+).
 
-## Examples
-
-See the [examples_usage.py](examples_usage.py) file for complete working examples:
-
-1. Basic usage with error handling
-2. Automatic retry on rate limit
-3. Pagination (manual and automatic)
-4. Usage monitoring
-5. Proactive limit checking
-6. Context manager usage
-7. All error scenarios
 
 ## Changelog
 
