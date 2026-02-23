@@ -77,6 +77,6 @@ class HttpClient:
         )
 
     def close(self) -> None:
-    """Close HTTP client."""
-    self.client.close()
+        """Close HTTP client."""
+        self.client.close()
 
