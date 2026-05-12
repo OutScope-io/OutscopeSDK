@@ -4,6 +4,10 @@ from .config import ClientConfig
 from .http import HttpClient
 from .resources.checks import ChecksResource
 from .resources.usage import UsageResource
+from .resources.pools import PoolsResource
+from .resources.companies import CompaniesResource
+from .resources.reports import ReportsResource
+from .resources.assets import AssetsResource
 
 
 class Client:
@@ -24,6 +28,10 @@ class Client:
 
         self.checks = ChecksResource(self._http_client)
         self.usage = UsageResource(self._http_client)
+        self.pools = PoolsResource(self._http_client)
+        self.companies = CompaniesResource(self._http_client)
+        self.reports = ReportsResource(self._http_client)
+        self.assets = AssetsResource(self._http_client)
 
     def close(self) -> None:
         """Close HTTP client and cleanup resources."""

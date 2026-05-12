@@ -66,3 +66,5 @@ docs/_build/
 # Environment variables
 .env
 .env.local
+examples/example_creds.py
+examples/*.pdf
